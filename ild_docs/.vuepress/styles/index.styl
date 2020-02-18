@@ -1,0 +1,237 @@
+* {
+    outline: none;
+}
+
+body {
+    font-family: thisFontFamily;
+    font-display: swap;
+}
+
+a.sidebar-link.active,
+.sidebar>.sidebar-links>li>a.sidebar-link,
+h1,
+h2,
+h3,
+h5,
+h6,
+th,
+td {
+    font-weight: normal;
+}
+
+.search-box input {
+    font-family: thisFontFamily;
+}
+
+.home .hero {
+    img {
+        max-height: 100px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .description {
+        color: thisBlackLighten;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .action-button {
+        background: transparent;
+        color: thisGreen;
+        border-radius: 30px;
+        padding: 6px 22px;
+        border: 1px solid thisGreen;
+        transition: 400ms;
+        font-size: 1.1rem;
+
+        &:hover {
+            background: thisGreen;
+            color: #fff;
+            transition: 400ms;
+        }
+    }
+}
+
+.home .features {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 40px 20px;
+    boxShadow(40px,0.15);
+    border-radius: 15px;
+    align-items: center;
+
+    .feature {
+        padding: 10px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 2rem;
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: thisGreen
+        }
+
+        &:nth-child(1):before {
+            content: "\f5da";
+        }
+
+        &:nth-child(2):before {
+            content: "\f53d";
+        }
+
+        &:nth-child(3):before {
+            content: "\f303";
+        }
+
+        h2 {
+            color: thisBlack;
+            margin-top: 60px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: thisBlackLighten;
+            font-size: 1rem;
+        }
+    }
+}
+
+table {
+    display: inline-block;
+    max-width: 100%;
+    boxShadow(10px,0.17);
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: thisGreen;
+        border-radius: 10px;
+    }
+
+    thead {
+        color: thisGreen;
+        border-bottom: 1px solid #dfe2e5;
+    }
+
+    th,
+    td {
+        border: 0;
+        padding: 15px;
+    }
+
+    tr {
+        border-top: 0;
+    }
+
+    tr:nth-child(2n) {
+        background: thisGrey;
+    }
+}
+
+.custom-block.tip {
+    border-color: thisGreen;
+    boxShadow(10px,0.17);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.custom-block.danger {
+    boxShadow(10px,0.17);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.navbar .site-name {
+    color: thisGreen;
+    font-weight: normal;
+}
+
+a.sidebar-link {
+    width: auto;
+}
+
+.sidebar-sub-header a {
+    position: relative;
+
+    &:after {
+        underlineAfter(2px,calc(100% - 2.25rem));
+        margin-left: 1.25rem;
+    }
+
+    &:hover:after {
+        underlineHoverAfter()
+    }
+
+    &:hover {
+        color: thisGreen;
+    }
+}
+
+.sidebar>.sidebar-links>li:not(:first-child) {
+    margin-top: 0;
+}
+
+.theme-default-content:not(.custom) a:hover {
+    text-decoration: none;
+}
+
+li p a {
+    position: relative;
+
+    &:after {
+        underlineAfter(-2px,100);
+    }
+
+    &:hover:after {
+        underlineHoverAfter()
+    }
+
+    &:hover {
+        color: thisGreen;
+    }
+}
+
+.theme-default-content.custom {
+    position: absolute;
+    left: 0;
+    right 0;
+}
+
+.dropdown-title {
+    font-size: 1rem;
+}
+
+.nav-dropdown {
+    font-size: 0.938rem;
+    position relative;
+}
+
+.dropdown-wrapper .dropdown-title .arrow {
+    border-top: 6px solid thisGreen;
+}
+
+
+@media screen and (max-width: 880px) {
+    .nav-links {
+        display: none;
+    }
+}

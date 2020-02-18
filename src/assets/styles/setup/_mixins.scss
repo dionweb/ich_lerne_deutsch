@@ -1,0 +1,56 @@
+@mixin smallDevices {
+  @media only screen and (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin mediumDevices {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin largeDevices {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin extraLargeDevices {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin twoExtraLargeDevices {
+  @media only screen and (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin mobileLandscape {
+  @media only screen and (max-width: 700px) and (max-height: 400px) {
+    @content;
+  }
+}
+
+@mixin mobileLandscapeLarger {
+  @media only screen and (min-width: 700px) and (max-width: 900px) and (max-height: 450px) {
+    @content;
+  }
+}
+
+@mixin fillIcon {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $green;
+}
+
+@mixin faIcon($content) {
+  content: $content;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+// @include faIcon("\f111");

@@ -1,0 +1,32 @@
+footer {
+  background: $dark-blue;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  p {
+    color: $white;
+    padding: 10px;
+    text-align: center;
+    i {
+      padding: 0 2px;
+    }
+  }
+  .privacy-link {
+    position: absolute;
+    color: $grey;
+    bottom: 15px;
+  }
+}
+
+@include smallDevices {
+  footer p,
+  footer .privacy-link {
+    font-size: 1rem;
+  }
+}

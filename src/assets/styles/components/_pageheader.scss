@@ -1,0 +1,21 @@
+.page-header {
+  height: 100px;
+  background: $grey;
+
+  .page-info {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+
+    h3 {
+      margin: 0 10px;
+      color: $black-lighten;
+    }
+
+    i {
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,262 @@
+nav {
+  position: unset;
+}
+
+.contact-wrapper {
+  overflow: hidden;
+  width: 65%;
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -webkit-box-shadow: $shadow-2;
+  box-shadow: $shadow-2;
+  border-radius: $radiusTemp;
+
+  .faq,
+  .contact-form {
+    flex: 1 0 20%;
+    padding: 40px;
+  }
+
+  .faq {
+    min-height: 250px;
+    background-color: $green;
+
+    h2 {
+      color: $white;
+
+      &.section-title::after {
+        background-color: $white;
+      }
+    }
+  }
+
+  .faq .accordion {
+    padding: 5px 15px;
+    margin: 15px 0 15px 0;
+    -webkit-box-shadow: $shadow-3;
+    box-shadow: $shadow-3;
+    border-radius: $radiusTemp;
+    cursor: pointer;
+    font-size: 0.95rem;
+    background-color: $white;
+
+    .question,
+    .answer {
+      padding: 10px;
+      color: $black-lighten;
+    }
+
+    .question {
+      position: relative;
+
+      &::before {
+        @include faIcon("\f107");
+        @include fillIcon;
+        right: 10px;
+        font-size: 22px;
+      }
+    }
+
+    .answer {
+      border-top: 1px solid $green;
+    }
+  }
+
+  .contact-form {
+    ul {
+      list-style: none;
+      color: $black-lighten;
+
+      li {
+        padding: 3px 0;
+        position: relative;
+
+        &::before {
+          @include faIcon("\f12a");
+          @include fillIcon;
+          left: -20px;
+          font-size: 22px;
+        }
+      }
+    }
+
+    .fields {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+
+      .personal-info {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          display: inline-block;
+          width: 48%;
+        }
+      }
+
+      input,
+      textarea,
+      select {
+        color: $black-lighten;
+        padding: 12px 20px;
+        margin: 15px 0 8px 0;
+        outline: 0;
+        -webkit-box-shadow: $shadow-3;
+        box-shadow: $shadow-3;
+        border-radius: $radiusTemp;
+        font-size: 0.95rem;
+        border: 1px solid transparent;
+        background: transparent;
+        width: 100%;
+
+        &:focus {
+          outline: none;
+          border-color: $green;
+          box-shadow: 0 0 1px $green;
+          transition: $transition;
+        }
+      }
+
+      textarea {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .options {
+        position: relative;
+
+        &::before {
+          @include faIcon("\f107");
+          @include fillIcon;
+          top: 27px;
+          right: 30px;
+          font-size: 22px;
+          z-index: -1;
+        }
+      }
+    }
+
+    label {
+      display: block;
+      color: $black-lighten;
+
+      input {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        height: 25px;
+        width: 25px;
+        border: 0;
+        outline: none;
+
+        &:before {
+          @include faIcon("\f192");
+          @include fillIcon;
+          font-size: 22px;
+        }
+
+        &:checked::before {
+          @include faIcon("\f058");
+          @include fillIcon;
+          font-size: 22px;
+        }
+      }
+
+      a {
+        color: $black;
+      }
+    }
+
+    button {
+      float: right;
+      margin: 20px 20px 0 0;
+      font-size: 0.95rem;
+    }
+
+    .submitted {
+      color: $green;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+
+@include extraLargeDevices {
+  .contact-wrapper {
+    width: 80%;
+  }
+
+  .contact-wrapper .faq,
+  .contact-wrapper .contact-form {
+    padding: 40px 20px;
+  }
+}
+
+@include largeDevices {
+  .contact-wrapper {
+    width: 90%;
+  }
+}
+
+@include mediumDevices {
+  .contact-wrapper {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .contact-wrapper .contact-form,
+  .contact-wrapper .faq {
+    margin: 0;
+  }
+}
+
+@include smallDevices {
+  .contact-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    .contact-form {
+      box-shadow: none;
+      border-radius: 0;
+
+      .fields input,
+      .fields textarea,
+      .fields select {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .faq {
+      order: 2;
+    }
+  }
+}
+
+@include mobileLandscape {
+  .contact-wrapper {
+    width: 90%;
+  }
+}
+
+@include mobileLandscapeLarger {
+  .contact-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .contact-wrapper .faq .accordion {
+    margin: 15px 40px;
+  }
+
+  .contact-wrapper .contact-form .fields {
+    padding: 20px 40px;
+  }
+}

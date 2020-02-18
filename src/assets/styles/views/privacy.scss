@@ -1,0 +1,36 @@
+nav {
+  position: unset;
+}
+
+.privacy {
+  width: 70%;
+  margin: 50px auto 50px auto;
+  h2 {
+    margin: 20px 0;
+  }
+  h3 {
+    margin-top: 33px;
+    font-size: 1.28rem;
+  }
+  p {
+    margin: 10px 0;
+  }
+  li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: $black;
+  }
+  hr {
+    margin-top: 30px;
+    border: none;
+    height: 1px;
+    color: $black-lighten;
+    background-color: $black-lighten;
+  }
+}
+
+@include smallDevices {
+  .privacy {
+    width: 85%;
+  }
+}

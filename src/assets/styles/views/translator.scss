@@ -1,0 +1,101 @@
+nav {
+  position: unset;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.translator {
+  padding-top: 0;
+}
+
+.translator-info p {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.translator-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .input textarea {
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border-color: $green;
+      box-shadow: 0 0 2px $green;
+      transition: $transition;
+    }
+  }
+
+  .input,
+  .output {
+    flex: 1 0 45%;
+  }
+}
+
+.container-t {
+  width: 60%;
+  margin: auto;
+  a {
+    display: block;
+    text-align: center;
+    color: $black-lighten;
+    margin-top: 3rem;
+  }
+}
+
+@include largeDevices {
+  .container-t {
+    width: 70%;
+  }
+}
+
+@include mediumDevices {
+  .translator-wrapper {
+    flex-direction: column;
+  }
+
+  .output {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@include smallDevices {
+  section {
+    margin: 0;
+  }
+
+  .container-t {
+    width: 90%;
+  }
+  .translator-info p {
+    font-size: 1rem;
+  }
+
+  .translator-wrapper .input textarea {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+@include mobileLandscape {
+  section {
+    margin: 0;
+  }
+}
+
+@include mobileLandscapeLarger {
+  section {
+    margin: 20px;
+  }
+
+  .container-t {
+    width: 90%;
+  }
+}

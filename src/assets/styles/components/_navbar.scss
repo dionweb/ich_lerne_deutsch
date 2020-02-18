@@ -1,0 +1,133 @@
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: $dark-blue;
+
+  .navbar {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title a {
+      color: $green;
+      font-size: 1.2rem;
+    }
+
+    .links {
+      a {
+        text-transform: uppercase;
+        padding: 2px 8px;
+        color: $white;
+        letter-spacing: 0.3px;
+
+        &:after {
+          width: calc(100% - 16px);
+          left: 8px;
+        }
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      .ebook {
+        background: $green;
+        border-radius: $radiusBtn;
+        padding: 10px 25px;
+        margin: 0 0 0 8px;
+
+        &:hover {
+          background-image: linear-gradient(
+            to right bottom,
+            #0eb29a,
+            #25b697,
+            #35b994,
+            #42bd91,
+            #4fc08d
+          );
+          color: $white;
+        }
+
+        &:after {
+          width: 0%;
+        }
+      }
+    }
+  }
+}
+
+.open-sidebar {
+  display: none;
+  cursor: pointer;
+
+  .sidebar-open {
+    font-size: 1.8rem;
+    color: $green;
+  }
+}
+
+.sidebar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: $green;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+
+  a {
+    text-transform: uppercase;
+    color: $grey;
+    font-size: 1.3rem;
+    padding: 10px;
+    transition: $transition;
+
+    &:hover {
+      transform: scaleX(1.1);
+    }
+  }
+
+  .btn {
+    border: 1px solid $white;
+    margin: 20px;
+    background: transparent;
+    color: $white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+
+    &:hover {
+      border: 1px solid $white;
+      background: $white;
+      color: $green;
+    }
+  }
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+@include mediumDevices {
+  .open-sidebar {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+}

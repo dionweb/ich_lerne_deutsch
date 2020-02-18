@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=greek');
+
+
+// VARIABLES
+
+$accentColor = #0eb29a
+$textColor = #1b1c1d
+$borderColor = #eaecef
+$codeBgColor = #282c34
+
+thisGreen = #0eb29a
+thisBlack = #1b1c1d
+thisBlackLighten = #5e5e5e
+thisGrey = #f7f7f7
+thisFontFamily = 'Roboto Condensed'
+
+// MIXINS
+
+boxShadow(thisPixels, thisOpacity)
+    -webkit-box-shadow: 0 0 thisPixels rgba(0, 0, 0, thisOpacity) !important;
+    box-shadow: 0 0 thisPixels rgba(0, 0, 0,  thisOpacity) !important;
+
+underlineAfter(thisBottom,thisWidth)
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: thisGreen;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 400ms;
+    bottom: thisBottom;
+    width: thisWidth;
+
+underlineHoverAfter()
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    box-sizing: border-box;
+
+// BREAKPOINTS
+
+$MQNarrow = 980px
+$MQMobile = 880px
+$MQMobileNarrow = 460px

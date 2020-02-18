@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+textarea {
+  font-family: $font;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  min-height: 150px;
+  text-align: center;
+  color: $black-lighten;
+}
+
+textarea,
+.top {
+  flex: 1 0 100%;
+  box-shadow: $shadow-2;
+  border-radius: $radiusTemp;
+}
+
+.top {
+  text-align: center;
+  width: 100%;
+}
+
+button,
+.languages {
+  display: inline-block;
+  font-family: $font;
+}
+
+.languages {
+  position: relative;
+  select {
+    min-width: 120px;
+    text-align-last: left;
+  }
+  &::before {
+    @include faIcon("\f107");
+    @include fillIcon;
+    font-size: 22px;
+    top: 19px;
+    right: 20px;
+    z-index: -1;
+  }
+}
