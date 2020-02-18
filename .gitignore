@@ -7,7 +7,7 @@ node_modules
 .env.*.local
 
 # deploy script
-.deploy.sh
+deploy.sh
 
 # Log files
 npm-debug.log*
