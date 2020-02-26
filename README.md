@@ -1,6 +1,6 @@
 # Ich lerne Deutsch
 
-[LIVE](https://dionweb.github.io/ich_lerne_deutsch/)
+[LIVE](https://ichlernedeutsch.info/)
 
 Το αποθετήριο ich_lerne_deutsch δημιουργήθηκε για την φιλοξενία της πτυχιακής μου άσκησης.
 
