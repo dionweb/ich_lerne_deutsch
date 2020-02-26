@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Ebook',
     description: "Καλώς Ήρθατε στο ηλεκτρονικό βιβλίο του ILD",
-    base: "/ich_lerne_deutsch/ebook/",
+    base: "/ebook/",
     head: [
         ['link', {
             rel: 'stylesheet',
