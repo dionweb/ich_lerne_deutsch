@@ -133,24 +133,24 @@ export default {
     filteredVerben: function() {
       return this.verben.filter(verben => {
         return (
-          verben.aufdeutsch.match(this.search) ||
-          verben.aufgriechisch.match(this.search)
+          verben.aufdeutsch.toLowerCase().match(this.search.toLowerCase()) ||
+          verben.aufgriechisch.toLowerCase().match(this.search.toLowerCase())
         );
       });
     },
     filteredAdjektive: function() {
       return this.adjektive.filter(adjektive => {
         return (
-          adjektive.aufdeutsch.match(this.search) ||
-          adjektive.aufgriechisch.match(this.search)
+          adjektive.aufdeutsch.toLowerCase().match(this.search.toLowerCase()) ||
+          adjektive.aufgriechisch.toLowerCase().match(this.search.toLowerCase())
         );
       });
     },
     filteredSubstantive: function() {
       return this.substantive.filter(substantive => {
         return (
-          substantive.aufdeutsch.match(this.search) ||
-          substantive.aufgriechisch.match(this.search)
+          substantive.aufdeutsch.toLowerCase().match(this.search.toLowerCase()) ||
+          substantive.aufgriechisch.toLowerCase().match(this.search.toLowerCase())
         );
       });
     }
