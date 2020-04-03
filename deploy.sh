@@ -1,8 +1,15 @@
 #!/usr/bin/env sh
 
-git init
+npm run build
+cd ild_docs
+vuepress build
+cd .vuepress
+mv dist ../../dist/ebook 
+cd ../../dist
+touch CNAME
+echo 'ichlernedeutsch.info' >> CNAME
+cd ../
 git add .
-git commit -m 'Ich lerne Deutsch'
-git remote add origin https://github.com/dionweb/ich_lerne_deutsch.git
+git commit -m 'Update'
 git push -u origin master
 npm run deploy
