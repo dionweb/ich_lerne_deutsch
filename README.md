@@ -1,6 +1,7 @@
 # Ich lerne Deutsch (Μαθαίνω γερμανικά)
 
-[:computer: Προεπισκόπηση](https://ichlernedeutsch.info/) [:uk: Αγγλική έκδοση](README_en.md)
+[:computer: Προεπισκόπηση](https://ichlernedeutsch.info/)
+[:uk: Αγγλική έκδοση](README_en.md)
 
 Το αποθετήριο ich_lerne_deutsch δημιουργήθηκε για την φιλοξενία της πτυχιακής μου άσκησης.
 
