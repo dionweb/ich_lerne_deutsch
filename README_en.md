@@ -1,8 +1,10 @@
 # Ich lerne Deutsch (I'm learning german)
 
-[:computer: Live Preview](https://ichlernedeutsch.info/) [:greece: Greek Version](README.md)
+[:computer: Live Preview](https://ichlernedeutsch.info/)
+[:greece: Greek Version](README.md)
 
 This repository created to host my thesis.
+
 The purpose of the thesis is to create a German language training site.
 
 ![Mockup](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/mockup.png)
