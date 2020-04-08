@@ -6,7 +6,7 @@
 
 Σκοπός της πτυχιακής εργασίας είναι η δημιουργία μιας ιστοσελίδας με χρήση VueJs για την εκμάθηση της γερμανικής γλώσσας.
 
-![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/mockup.png)_My caption_
+![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/mockup.png)
 
 ## Περιγραφή
 
@@ -18,13 +18,13 @@
 
 ## Εικόνες
 
-|||
-| - | - | - |
+|                                                                                                                      |                                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Home2.png)_Homepage Description_ | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Home3.png)_Homepage Testimonials_             |
 | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Translator.png)_Translator_      | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Translator-arch.png)_Translator architecture_ |
 | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Dictionary.png)_Dictionary_      | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Dictionary-arch.png)_Dictionary architecture_ |
 | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Contact.png)_Contact_            | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/Contact-arch.png)_Contact architecture_       |
-| ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/ebook1.png)_Ebook_               | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/ebook2.png)_Ebook_                        |
+| ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/ebook1.png)_Ebook_               | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/ebook2.png)_Ebook_                            |
 | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/ebook3.png)_Ebook flipcards_     | ![alt text](https://raw.githubusercontent.com/dionweb/ich_lerne_deutsch/screenshots/ebook4.png)_Ebook quiz_                       |
 
 ## Δημιουργός
