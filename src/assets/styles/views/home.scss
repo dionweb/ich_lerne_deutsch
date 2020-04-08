@@ -65,8 +65,9 @@ nav {
 
 .features-wrapper {
   display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px;
   box-shadow: $shadow-2;
   border-radius: $radiusTemp;
 
@@ -199,6 +200,24 @@ nav {
 
     &:hover {
       transform: scale(1.06);
+    }
+  }
+}
+
+@include twoextraLargeDevices {
+  .about-us .container {
+    width: 45%;
+  }
+
+  .features .container {
+    width: 45%;
+  }
+
+  .testimonials .container {
+    width: 50%;
+
+    .box {
+      margin: 10px;
     }
   }
 }

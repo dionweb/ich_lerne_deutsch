@@ -10,6 +10,6 @@ touch CNAME
 echo 'ichlernedeutsch.info' >> CNAME
 cd ../
 git add .
-git commit -m 'Update'
+git commit -m 'media'
 git push -u origin master
 npm run deploy

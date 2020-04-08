@@ -4,7 +4,7 @@ nav {
 
 .contact-wrapper {
   overflow: hidden;
-  width: 65%;
+  width: 60%;
   margin: 50px auto 50px auto;
   display: flex;
   justify-content: center;
@@ -182,6 +182,12 @@ nav {
       text-align: center;
       display: inline-block;
     }
+  }
+}
+
+@include twoextraLargeDevices {
+  .contact-wrapper {
+    width: 45%;
   }
 }
 

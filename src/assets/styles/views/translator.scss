@@ -48,6 +48,12 @@ section {
   }
 }
 
+@include twoextraLargeDevices {
+  .container-t {
+    width: 45%;
+  }
+}
+
 @include largeDevices {
   .container-t {
     width: 70%;

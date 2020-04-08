@@ -162,6 +162,12 @@ nav {
   }
 }
 
+@include twoextraLargeDevices {
+  .container {
+    width: 45%;
+  }
+}
+
 @include largeDevices {
   .container {
     width: 90%;

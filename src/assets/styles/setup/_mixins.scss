@@ -22,6 +22,12 @@
   }
 }
 
+@mixin twoextraLargeDevices {
+  @media only screen and (min-width: 1800px) {
+    @content;
+  }
+}
+
 @mixin twoExtraLargeDevices {
   @media only screen and (min-width: 1300px) {
     @content;
