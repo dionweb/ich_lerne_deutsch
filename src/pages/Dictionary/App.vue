@@ -84,10 +84,6 @@ let db = firebase
   })
   .database();
 
-let verbenRef = db.ref("verben").orderByChild("aufdeutsch");
-let adjektiveRef = db.ref("adjektive").orderByChild("aufdeutsch");
-let substantiveRef = db.ref("substantive").orderByChild("aufdeutsch");
-
 export default {
   name: "Dictionary",
   metaInfo: {
@@ -112,9 +108,9 @@ export default {
     Footer
   },
   firebase: {
-    verben: verbenRef,
-    adjektive: adjektiveRef,
-    substantive: substantiveRef
+    verben: db.ref("verben").orderByChild("aufdeutsch"),
+    adjektive: db.ref("adjektive").orderByChild("aufdeutsch"),
+    substantive: db.ref("substantive").orderByChild("aufdeutsch")
   },
   data: function() {
     return {
@@ -124,9 +120,9 @@ export default {
       firstInput: "Ρήματα",
       secondInput: "Επίθετα",
       thirdInput: "Ουσιαστικά",
-      verben: verbenRef,
-      adjektive: adjektiveRef,
-      substantive: substantiveRef,
+      verben: [],
+      adjektive: [],
+      substantive: [],
       verbenChecked: false,
       adjektiveChecked: false,
       substantiveChecked: false,
