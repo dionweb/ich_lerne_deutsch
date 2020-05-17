@@ -13,6 +13,6 @@ echo 'ichlernedeutsch.info' >> dist/CNAME
 
 ## Stage, commit, push to master branch and deploy to gh-pages
 git add .
-git commit -m 'Commit message'
+git commit -m 'UPDATE'
 git push -u origin master
 npm run deploy
