@@ -1,15 +1,18 @@
 #!/usr/bin/env sh
 
+## Build
 npm run build
-cd ild_docs
-vuepress build
-cd .vuepress
-mv dist ../../dist/ebook 
-cd ../../dist
-touch CNAME
-echo 'ichlernedeutsch.info' >> CNAME
-cd ../
+npm run ebook:build
+
+## Rename and move ebook to dist folder
+mv ild_docs/.vuepress/dist/ ild_docs/.vuepress/ebook/
+mv ild_docs/.vuepress/ebook/ dist/
+
+## Create CNAME
+echo 'ichlernedeutsch.info' >> dist/CNAME
+
+## Stage, commit, push to master branch and deploy to gh-pages
 git add .
-git commit -m 'media'
+git commit -m 'Commit message'
 git push -u origin master
 npm run deploy
