@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueFire from 'vuefire'
 import VueMeta from 'vue-meta'
+import { rtdbPlugin } from 'vuefire'
 
-Vue.use(VueFire)
 Vue.use(VueMeta)
+Vue.use(rtdbPlugin)
 Vue.config.productionTip = false
 
 new Vue({

@@ -70,18 +70,19 @@
 import Navbar from "@/components/Navbar";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
-import firebase from "firebase";
-let config = {
-  apiKey: process.env.VUE_APP_I,
-  authDomain: process.env.VUE_APP_DONT,
-  databaseURL: process.env.VUE_APP_KNOW,
-  projectId: process.env.VUE_APP_WTF,
-  storageBucket: process.env.VUE_APP_IS,
-  messagingSenderId: process.env.VUE_APP_THIS
-};
+import firebase from "firebase/app";
+import "firebase/database";
 
-let app = firebase.initializeApp(config);
-let db = app.database();
+let db = firebase
+  .initializeApp({
+    apiKey: process.env.VUE_APP_I,
+    authDomain: process.env.VUE_APP_DONT,
+    databaseURL: process.env.VUE_APP_KNOW,
+    projectId: process.env.VUE_APP_WTF,
+    storageBucket: process.env.VUE_APP_IS,
+    messagingSenderId: process.env.VUE_APP_THIS
+  })
+  .database();
 
 let verbenRef = db.ref("verben").orderByChild("aufdeutsch");
 let adjektiveRef = db.ref("adjektive").orderByChild("aufdeutsch");
@@ -123,6 +124,9 @@ export default {
       firstInput: "Ρήματα",
       secondInput: "Επίθετα",
       thirdInput: "Ουσιαστικά",
+      verben: verbenRef,
+      adjektive: adjektiveRef,
+      substantive: substantiveRef,
       verbenChecked: false,
       adjektiveChecked: false,
       substantiveChecked: false,
@@ -149,8 +153,12 @@ export default {
     filteredSubstantive: function() {
       return this.substantive.filter(substantive => {
         return (
-          substantive.aufdeutsch.toLowerCase().match(this.search.toLowerCase()) ||
-          substantive.aufgriechisch.toLowerCase().match(this.search.toLowerCase())
+          substantive.aufdeutsch
+            .toLowerCase()
+            .match(this.search.toLowerCase()) ||
+          substantive.aufgriechisch
+            .toLowerCase()
+            .match(this.search.toLowerCase())
         );
       });
     }
