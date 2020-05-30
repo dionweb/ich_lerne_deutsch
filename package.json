@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "firebase": "^7.14.6",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^3.0.0",
     "vue": "^2.6.11",
     "vue-meta": "^2.3.4",
     "vue-resource": "^1.5.1",
