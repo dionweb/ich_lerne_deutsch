@@ -12,24 +12,25 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "firebase": "^7.15.4",
+    "firebase": "^7.18.0",
     "gh-pages": "^3.1.0",
+    "serialize-javascript": "^4.0.0",
     "vue": "^2.6.11",
     "vue-meta": "^2.4.0",
     "vue-resource": "^1.5.1",
-    "vuefire": "^2.2.2"
+    "vuefire": "^2.2.4"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.6",
-    "@vue/cli-plugin-eslint": "^4.4.6",
-    "@vue/cli-service": "^4.4.6",
+    "@vue/cli-plugin-babel": "^4.5.4",
+    "@vue/cli-plugin-eslint": "^4.5.4",
+    "@vue/cli-service": "^4.5.4",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.7.0",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^9.0.3",
     "vue-template-compiler": "^2.6.11",
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.5.3"
   },
   "eslintConfig": {
     "root": true,
