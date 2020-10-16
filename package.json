@@ -15,7 +15,7 @@
     "firebase": "^7.24.0",
     "gh-pages": "^3.1.0",
     "serialize-javascript": "^4.0.0",
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "vue-meta": "^2.4.0",
     "vue-resource": "^1.5.1",
     "vuefire": "^2.2.4"
@@ -29,7 +29,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",
-    "vue-template-compiler": "^2.6.11",
+    "vue-template-compiler": "^2.6.12",
     "vuepress": "^1.5.3"
   },
   "eslintConfig": {
