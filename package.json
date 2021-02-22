@@ -11,7 +11,7 @@
     "ebook:build": "vuepress build ild_docs"
   },
   "dependencies": {
-    "firebase": "^8.2.8",
+    "firebase": "^8.2.9",
     "serialize-javascript": "^5.0.1",
     "vue": "^2.6.12",
     "vue-meta": "^2.4.0",
